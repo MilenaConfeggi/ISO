@@ -1,4 +1,4 @@
-#compruebo de que se pase solo un parametro
+#compruebo de que se pasen uno o dos parametros
 if [ $# -gt 2 ];then
   echo "Error: Deben pasarse un parametro -b n, -l, -i" 
   exit 1 
