@@ -8,7 +8,7 @@ for linea in $(cat /etc/passwd); do
   #Busco en la ruta un tipo directorio con nombre mailDir
   #Cuento la cantidad y si hay uno es que existe
   #Verifico que bash= /bin/bash
-  if [ $(sudo find $ruta -type d -name mailDir | wc -l) -eq 1] && [$bash = /bin/bash ]; do
+  if [ $(sudo find $ruta -type d -name mailDir | wc -l) -eq 1] && [$bash = /bin/bash ]; then
      echo "$nom" >> /var/listado.tx
   fi
 done
