@@ -5,7 +5,7 @@ if [ $# -lt 2 ]; then
   exit 1
 fi
 #Verifico que exista fecha 
-if [ $(ls cat /var/log | cut -d"." -f2 | grep $1 | wc -l) -eq 0 ]; then
+if [ $(ls /var/log | cut -d"." -f2 | grep $1 | wc -l) -eq 0 ]; then
   echo "La fecha no existe"
   exit 2
 fi
